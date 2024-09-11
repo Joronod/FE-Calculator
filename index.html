@@ -4,47 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
+    <title>Basic Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <div class="displayScreen"></div>
-            <div class="buttons"></div>
+    <section class="container">
+        <section class="calculator">
+            <section class="displayScreen"></section>
+            <section class="buttons"></section>
             <table>
                 <tr>
-                    <td>C</td>
-                    <td>&divide;</td>
-                    <td>&times;</td>
-                    <td> < </td>
+                    <td> <button class="op" id="clear">C</button></td>
+                    <td> <button class="op" id="/">&divide;</button></td>
+                    <td > <button class="op" id="*">&times;</button></td>
+                    <td > <button class="op" id="backspace"> < </button></td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>-</td>
+                    <td > <button class="num" id="7">7</button></td>
+                    <td > <button class="num" id="8">8</button></td>
+                    <td > <button class="num" id="9">9</button></td>
+                    <td > <button class="op" id="-">-</button></td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>+</td>
+                    <td > <button class="num" id="4">4</button></td>
+                    <td > <button class="num" id="5">5</button></td>
+                    <td > <button class="num" id="6">6</button></td>
+                    <td > <button class="op" id="+">+</button></td>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>=</td>
+                    <td > <button class="num" id="1">1</button></td>
+                    <td > <button class="num" id="2">2</button></td>
+                    <td > <button class="num" id="3">3</button></td>
+                    <td> <button rowspan="2" class="op">=</button></td>
                 </tr>
                 <tr></tr>
-                    <td>(</td>
-                    <td>0</td>
-                    <td>)</td>
+                    <td> <button class="op">(</button></td>
+                    <td> <button class="num" id="0">0</button></td>
+                    <td> <button class="op">)</button></td>
                     
                 </tr>
             </table>
-        </div>
-    </div>
+    </section>
+    </section>
     
 </body>
 </html>

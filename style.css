@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(31, 78, 63);
+}
+
+.container{
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.calculator{
+    height: auto;
+    width: auto;
+    padding: 20px;
+    background-color: rgb(231, 252, 245);
+    border-radius: 10px;
+    box-shadow: 0 0 30px black;
+}
+.display{
+    height: 50px;
+    width: 100px;
+}
+.buttons{
+    height: 100px;
+    width: 100px;
+}
