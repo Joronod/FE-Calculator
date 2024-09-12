@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function handleButtonClick(event) {
         console.log("Button clicked: ", event.target.textContent);
         const buttonValue = event.target.textContent;
-
+        
         if (buttonValue === "C") {
             currentInput = "";
             previousInput = "";
@@ -23,9 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
             updateDisplay("0");
             return;
         }
-
-        if (buttonValue === "<") {
+        
+        if (event.target.id === "backspace") {
             currentInput = currentInput.slice(0, -1);
+            console.log("backspace")
             if (currentInput === "") {
                 updateDisplay("0");
             } else {
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             return;
         }
-
+        
         if (["+", "-", "*", "/"].includes(buttonValue)) {
             if (currentInput === "" && buttonValue === "-") {
                 currentInput = "-";
@@ -52,13 +53,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             return;
         }
-
+        
         if (["(", ")"].includes(buttonValue)) {
             currentInput += buttonValue;
             updateDisplay(currentInput);
             return;
         }
-
+        
         if (buttonValue === "=") {
             if (currentInput !== "" && previousInput !== "" && operator !== "") {
                 const result = calculate(previousInput, currentInput, operator);
@@ -69,13 +70,14 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             return;
         }
-
+        
         if (!isNaN(buttonValue) || buttonValue === ".") {
             currentInput += buttonValue;
             updateDisplay(currentInput);
         }
+        console.log("Current input:", currentInput)
     }
-
+    
     function calculate(firstValue, secondValue, operator) {
         const num1 = parseFloat(firstValue);
         const num2 = parseFloat(secondValue);
