@@ -27,6 +27,20 @@ This implementation uses plain HTML, CSS, and JavaScript. It features a simple c
 * Less modular and maintainable compared to modern frameworks
 * Limited scalability for complex features
 
+## Running this Calculator:
+
+1. Clone the repo:
+
+``
+git clone https://github.com/Joronod/FE-Calculator.git
+``
+
+2. Navigate to the Project Directory:
+
+`` cd JS-calculator ``
+
+3. Open the `` index.html `` file in a web browser: Simply double-click `` index.html `` or drag it into a web browser to view and interact with the calculator.
+
 ## React Vite Calculator
 This version uses React and Vite to build a more modern calculator. It employs React's component-based architecture and state management with hooks for a clean and scalable codebase. Vite is used for fast build and development.
 
@@ -52,6 +66,24 @@ This version uses React and Vite to build a more modern calculator. It employs R
 
 * Requires familiarity with React and modern build tools
 * Larger initial setup compared to plain JavaScript
+
+## Running this Calculator:
+
+1. Clone the Repo
+
+`` 
+git clone https://github.com/Joronod/FE-Calculator.git
+``
+
+2. Navigate to the Project Directory:
+
+``
+cd react-vite-calculator
+``
+
+3. Install Dependencies with ``npm install``
+
+4. Start the Development Server with `` npm run dev ``
 
 Both implementations provide a solid foundation for understanding different development approaches, from traditional methods to modern frameworks.
 
