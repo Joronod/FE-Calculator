@@ -37,11 +37,11 @@ h1 {
 }
 
 button {
-  background-color: #222;
+  background-color: #333;
   border: none;
   padding: 20px;
   font-size: 1.5rem;
-  color: #00ffcc;
+  color: #181d17;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 255, 204, 0.7), 0 0 20px rgba(0, 255, 204, 0.5);
   transition: 0.2s ease-in-out;
@@ -51,11 +51,14 @@ button {
 
 
 button:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 204, 1), 0 0 30px rgba(0, 255, 204, 0.7);
+  background-color: #555;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 1) 0 0 30px rgba(0, 255, 204, 0.7);
   transform: scale(1.05);
+  color: #9cf798;
 }
 
 button:active {
+  background-color: #555;
   transform: scale(0.95);
   box-shadow: 0 0 5px #00ffcc;
 }
@@ -115,6 +118,8 @@ button[id="="]:hover {
   button {
       padding: 15px;
       font-size: 1.25rem;
+      min-width: 44px;
+      min-height: 44px;
   }
 
   .input h2, .result h2 {
@@ -149,4 +154,8 @@ button[id="c"] {
 
 button[id="c"]:hover {
   box-shadow: 0 0 20px #ff0066;
+}
+
+button:focus {
+  outline: 3px solid #00ffcc; 
 }

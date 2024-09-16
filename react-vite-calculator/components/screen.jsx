@@ -1,11 +1,11 @@
-const Screen = ({ input, result })=>{
+const Screen = ({ input, result, resultRef })=>{
     return (
         <section className="card">
-            <div className="input">
+            <div className="input" aria-live="polite">
                 <h2>{input}</h2>
             </div>
-            <div className="result">
-                <h2>{result}</h2>
+            <div className="result" aria-live="polite">
+                <h2 ref={resultRef} tabIndex="1">{result}</h2>
             </div>
         </section>
     )
