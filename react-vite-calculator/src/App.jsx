@@ -4,10 +4,12 @@ import Header from '../components/header'
 import Keypad from '../components/keypad'
 
 function App() {
-  return <>
-    <Header />
-    <Keypad />
-  </>
+  return (
+    <div className='container'>
+      <Header />
+      <Keypad />
+    </div>
+  )
 }
 
 export default App

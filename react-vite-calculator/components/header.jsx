@@ -1,7 +1,7 @@
 const Header = ()=>{
     return (
         <header>
-        <h1>The Best Calculator in the World!</h1>
+        <h1>Calculator</h1>
         </header>
     )
 }

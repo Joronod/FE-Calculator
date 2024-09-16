@@ -20,6 +20,9 @@ const Keypad = () =>{
             setInput("")
             setResult("")
         }
+        else if(value === " < "){
+            setInput(input.slice(0,-1))
+        }
         else {setInput(input + value)}
     }
 
@@ -29,7 +32,7 @@ const Keypad = () =>{
                 <Screen input={input} result={result} />
             </section>
             <section className='keypad'>
-                {["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "+", "-", "*", "/", "=", "c"].map((index)=>{
+                {["c", "/", "*", " < ", "7", "8", "9", "-", "4", "5", "6", "+", "1", "2", "3", "=", "(", "0", ")"].map((index)=>{
                     return <button id={index} onClick={handleButtonClick}>{index}</button>
                 })}
             </section>
